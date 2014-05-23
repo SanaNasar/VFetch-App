@@ -1,0 +1,31 @@
+<h1>Search Results</h1>
+
+<style>
+
+    body {
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-color: red;
+      color: red;
+      font-family: Arial;
+    }
+
+ </style> 
+ <body>
+
+ 		<h2> Wohoooooooo!! </h2>
+ 		<h3><b><marquee behavior="scroll" direction="left">"Never Ever Give Up!! "</marquee></b></h3>
+ 		 <img src="http://dream-it-plan-it-do-it.com/wp-content/uploads/2014/02/e.jpg" width="300" height="300">
+	<h2> Here are the list of Youtube Videos :) </h2>
+
+ </body>
+
+ <% @videos.each do |v| %>
+
+	<% id = v["video_id"]%>
+	<% @url = "http://www.youtube.com/embed/#{id}" %>
+	<iframe src=<%=@url%> width=640 height=480 frameborder=0></iframe>
+<% end %>
+
+ 
